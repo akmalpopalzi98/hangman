@@ -16,7 +16,7 @@ print(word)
 guess = input('enter a single letter')
 
 # %%
-if len(guess) == 1 and isinstance(guess,str):
+if len(guess) == 1 and guess.isalpha():
     print('good guess')
 else:
     print('Oops! That is not valid')
