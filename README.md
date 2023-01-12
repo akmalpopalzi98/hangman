@@ -25,3 +25,19 @@ Task 5:
 
 Create a read me file that describes the set of tasks in milestone 2. This was the final task for milestone 2
  
+Milestone 3 consists of 3 main tasks:
+
+Task 1:
+
+The aim of this task was to iteratively check if the input is a valid guess using a while in combination with if and else statements
+
+Task 2:
+
+The aim of this task was to check whether the guess is in the word
+
+Task 3:
+
+The aim of this task was to clean up the preceeding code by creating functions. Functions check_guess and ask_for_input were created.
+check_guess checks whether the guess letter in the arg is in the word or not.
+ask_for_input checks whether the entered letter is actually a letter or not.
+
