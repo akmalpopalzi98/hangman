@@ -6,7 +6,7 @@ class Hangman():
         self.num_lives = num_lives
         self.num_letters = None
         self.word_guessed = None
-        self.word = None
+        self.word = random.choice(self.word_list)
         self.list_of_guesses = None
 
     
