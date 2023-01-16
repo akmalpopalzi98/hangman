@@ -12,9 +12,9 @@ class Hangman():
 
 
     def check_guess(self,guess):
-        if guess.lower() in self.word:
+        if guess.lower() in self.word.lower():
             print(f'Good guess! {guess.lower()} is in the word.')
-            for index,item in enumerate(self.word):
+            for index,item in enumerate(self.word.lower()):
                 if item == guess.lower():
                     self.word_guessed[index] = guess.lower()
             self.num_letters -= 1
