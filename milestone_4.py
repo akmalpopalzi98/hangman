@@ -2,7 +2,7 @@
 import random
 
 class Hangman():
-    def __init__(self,word_list,num_lives):
+    def __init__(self,word_list,num_lives = 5):
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = random.choice(self.word_list)
@@ -12,7 +12,7 @@ class Hangman():
 
 
     def check_guess(self,guess):
-        if guess.lower() in self.word:
+        if guess.lower() in self.word.lower():
             print(f'Good guess! {guess.lower()} is in the word.')
             for index,item in enumerate(self.word):
                 if item == guess:
