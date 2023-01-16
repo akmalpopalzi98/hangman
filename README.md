@@ -51,4 +51,15 @@ Within the else statement:
 3. printing a final messege return the number of lives left
 
 
+Task 5:
+
+For this final task, the code in milestone 4 was put together called inside another function called play_game which took in a list of words.
+Within the function, a hangman object was created which took in the word_list arg and num_lives arg.
+
+a while statement was created and set to True. Within that block of code a num_lives check was made to see if it was = 0. If so, then the game would end.
+
+An elif statement then checked whether the num_letters was > 0. If so, then the ask_for_input block would run and ask the user for the input. Finally, an if statement made the final checks to see if the game was completed. If so, the game would end and print winner. 
+
+
+
 
