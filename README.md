@@ -41,3 +41,14 @@ The aim of this task was to clean up the preceeding code by creating functions. 
 check_guess checks whether the guess letter in the arg is in the word or not.
 ask_for_input checks whether the entered letter is actually a letter or not.
 
+
+Task 4:
+
+For this task, the aim was to modify the check_guess method to deal with letters that are not in the chosen word. 
+Within the else statement:
+1. The value for num_Lives is reduced by 1 each time an incorrect guess is made
+2. printing a messege that says the letter was incorrect
+3. printing a final messege return the number of lives left
+
+
+
