@@ -5,18 +5,18 @@ class Hangman():
     def __init__(self,word_list,num_lives = 5):
         self.word_list = word_list
         self.num_lives = num_lives
-        self.word = random.choice(self.word_list)
+        self.word = random.choice(self.word_list).lower()
         self.word_guessed = list('_'*len(self.word))
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
 
     def check_guess(self,guess):
-        if guess.lower() in self.word.lower():
+        if guess.lower() in self.word:
             print(f'Good guess! {guess.lower()} is in the word.')
             for index,item in enumerate(self.word):
-                if item == guess:
-                    self.word_guessed[index] = guess
+                if item == guess.lower():
+                    self.word_guessed[index] = guess.lower()
             self.num_letters -= 1
 
         else:
